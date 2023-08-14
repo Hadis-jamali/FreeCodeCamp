@@ -4,48 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/form.css" />
+    <link rel="stylesheet" href="./form.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">
-          Thank you for taking the time to help us improve the platform
-        </p>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
       </header>
 
       <form id="survey-form">
         <div class="information">
           <label id="name-label">Name</label><br />
-          <input
-            class="input"
-            id="name"
-            type="text"
-            placeholder="Enter your name"
-            required
-          />
+          <input class="input" id="name" type="text" placeholder="Enter your name" required />
         </div>
         <div class="information">
           <label id="email-label">Email</label><br />
-          <input
-            class="input"
-            id="email"
-            type="email"
-            placeholder="Enter your Emai"
-            required
-          />
+          <input class="input" id="email" type="email" placeholder="Enter your Emai" required />
         </div>
         <div class="information">
           <label id="number-label">Age(optional)</label><br />
-          <input
-            class="input"
-            id="number"
-            type="number"
-            min="20"
-            max="35"
-            placeholder="Age"
-          />
+          <input class="input" id="number" type="number" min="20" max="35" placeholder="Age" />
         </div>
         <div class="information">
           <p>Which option best describes your current role?</p>
@@ -60,12 +39,7 @@
         </div>
         <div class="information">
           <p>Would you recommend freeCodeCamp to a friend?</p>
-          <input
-            type="radio"
-            id="radio"
-            name="radio-button"
-            value="Definitely"
-          />
+          <input type="radio" id="radio" name="radio-button" value="Definitely" />
           <label for="Definitely">Definitely</label><br />
 
           <input type="radio" id="radio" name="radio-button" value="Maybe" />
@@ -105,10 +79,7 @@
         </div>
         <div class="information">
           <p>Any comments or suggestions?</p>
-          <textarea
-            class="textarea"
-            placeholder="Enter your comment here..."
-          ></textarea>
+          <textarea class="textarea" placeholder="Enter your comment here..."></textarea>
         </div>
         <div class="information">
           <button class="button" id="submit" type="submit">submit</button>
