@@ -6,23 +6,31 @@ body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
 }
-header {
+.navigation-bar {
   background-color: peru;
   display: flex;
 }
-
+#nav-text {
+  flex-grow: 3;
+  font-weight: bold;
+}
+#lang {
+  background-color: peru;
+  border: none;
+  font-weight: bold;
+  flex-grow: 3;
+}
+#logo-div {
+  flex-grow: 3;
+  align-items: center;
+}
 #logo {
   width: 30px;
   height: 30px;
 }
 h1 {
-  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 30px;
 }
 
 .established {
@@ -35,13 +43,8 @@ p {
   text-align: center;
   padding: 10px;
 }
+
 .menu {
-  @media screen and (max-width: 768px) {
-    width: 80%;
-  }
-  @media screen and (min-width: 769px) {
-    width: 40%;
-  }
   background-color: burlywood;
   margin: 40px auto 40px auto;
   padding: 20px;
@@ -78,27 +81,23 @@ footer {
   font-size: 14px;
   background-color: peru;
   padding: 20px;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* margin: 40px auto 40px auto; */
-  padding: 20px;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   width: 80%;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
 }
 .col {
-  width: inherit;
   text-align: center;
 }
-li {
+.col > li {
   margin-top: 10px;
+}
+.col > li:hover {
+  background-color: lightgray;
+  border-radius: 5px;
 }
 li:first-child {
   font-weight: bold;
@@ -128,4 +127,22 @@ a:hover {
 
 a:active {
   color: brown;
+}
+
+@media only screen and (max-width: 767px) {
+  .col {
+    margin: 0 0 20px 0;
+  }
+  .menu {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    width: 40%;
+  }
 }
